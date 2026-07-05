@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elucida · Assurance — prove it to regulators</title>
+  <meta name="description" content="Elucida Assurance — reads vendor evidence, judges every claim against the proof, and crosswalks each verdict across 12 frameworks. Examiner-defensible TPRM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/tool.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+</head>
+<body data-theme="assurance">
+  <canvas id="glbg" class="gl-bg"></canvas>
+  <div class="spray"><i></i></div>
+  <canvas id="constellation" class="constellation" style="opacity:.2"></canvas>
+  <div class="grid-bg"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="veil"><div class="veil__logo">◈ ELUCIDA</div></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="brand" data-transition><span class="brand__mark">◈</span><span>ELUCIDA</span></a>
+    <nav class="nav__links">
+      <a href="index.html#select" data-transition>All tools</a>
+      <a href="offensive.html" data-transition>Offensive</a>
+      <a href="discovery.html" data-transition>Discovery</a>
+    </nav>
+    <a href="index.html" class="nav__cta" data-transition>← Back to suite</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="page">
+    <section class="thero">
+      <div class="thero__fx">
+        <div class="thero__viz" data-parallax="0.06"><div class="fx-rings"><i></i><i></i><i></i></div><img class="thero__logoxl" src="assets/logos/assurance.svg" alt="Elucida Assurance" /></div>
+      </div>
+      <div class="thero__inner">
+        <div class="thero__pillar reveal"><span>Pillar 03</span> Elucida · Assurance</div>
+        <h1 class="thero__name reveal" data-d="1">Prove it to regulators.</h1>
+        <p class="thero__lead reveal" data-d="2">Vendors answer once. <b>Elucida Verify</b> reads their evidence, judges every claim against the proof, and auto-maps each verdict across 12 security &amp; regulatory frameworks in real time — examiner-defensible by default.</p>
+        <div class="chips thero__chips reveal" data-d="3">
+          <span class="chip">Next.js 16</span><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">BM25 + ONNX embeddings</span><span class="chip">NLI citation check</span>
+        </div>
+        <div class="thero__cta reveal" data-d="4">
+          <a href="#reel" class="btn btn--primary" data-magnetic>Watch it work <span class="btn__arrow">↓</span></a>
+          <a href="mailto:vyshakhg04@gmail.com?subject=Elucida%20%E2%80%94%20collaboration" class="btn btn--ghost btn--private"><svg class="btn__lock" viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="4.5" y="10" width="15" height="10.5" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15" r="1.5" fill="currentColor"/></svg>Source: Private — <b>seeking collaborators</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reel section" id="reel" style="padding-top:20px;">
+      <div class="reel__frame reveal">
+        <div class="reel__bar"><i></i><i></i><i></i><span class="reel__url">elucida-assurance · CARE cockpit</span><span class="reel__badge">EXAMINER-READY</span></div>
+        <video data-lazy loop muted playsinline preload="metadata" poster="assets/assurance/welcome-new-poster.webp">
+          <source src="assets/assurance/welcome-new.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="reel__cap reveal">CARE — Continuous Assurance &amp; Regulatory Exposure — the split cockpit built for banks and regulated entities.</p>
+    </section>
+
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">Why it's different</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:44px;">Incumbents auto-fill questionnaires.<br /><span class="grad-text">Elucida judges claim vs. proof.</span></h2>
+
+      <div class="fblock">
+        <div class="fblock__text reveal" data-reveal="left">
+          <span class="fblock__k">The evidentiary chain</span>
+          <h3>Every verdict is defensible</h3>
+          <p>Each judgment traces claim → the exact source span in the vendor's document → control → regulation clause → rationale → calibrated confidence. It requires a verified citation for every "Compliant" — and abstains rather than guessing.</p>
+          <ul class="fblock__list">
+            <li><b>Verified citations:</b> hybrid BM25 + local ONNX embeddings; each quote checked to occur in the evidence and to entail the claim (NLI)</li>
+            <li><b>Kills hallucinated citations</b> mechanically, not by trust</li>
+            <li><b>Governance:</b> every adjudication audit-logged with model/prompt/retrieval provenance (SR 11-7-aligned)</li>
+          </ul>
+        </div>
+        <div class="fblock__media reveal" data-reveal="right" data-d="1">
+          <img src="assets/assurance/shot-welcome-1.webp" alt="Adjudication cockpit" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="fblock">
+        <div class="fblock__text reveal" data-reveal="right">
+          <span class="fblock__k">One verdict, every framework</span>
+          <h3>Clause-to-clause crosswalk</h3>
+          <p>One evidence set is crosswalked across APAC regulators (MAS, RBI, SEBI), Western (DORA, US Interagency, APRA) and global standards (ISO 27001, SOC 2, NIST CSF, PCI DSS, GDPR, DPDP) — every control carrying explicit clause mappings, not just a shared tag.</p>
+          <ul class="fblock__list">
+            <li><b>One questionnaire</b> (54 controls, 14 domains) answers them all — scope any subset at onboarding</li>
+            <li><b>Continuous re-adjudication:</b> re-judges on new evidence, flags drift between attested and proven</li>
+            <li><b>Fourth-party concentration:</b> shared subprocessors as single points of failure (DORA Art. 28-30)</li>
+          </ul>
+        </div>
+        <div class="fblock__media reveal" data-reveal="left" data-d="1">
+          <video data-lazy loop muted playsinline preload="metadata" poster="assets/assurance/mapping-poster.webp">
+            <source src="assets/assurance/mapping.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">What's inside</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:40px;">The major kit</h2>
+      <div class="caps">
+        <div class="cap reveal" data-d="1"><div class="cap__icon">⚖</div><h4>Elucida Verify</h4><p>Decomposes each control RFI into atomic sub-claims, grounds the verdict on retrieved evidence, and abstains on insufficient proof.</p></div>
+        <div class="cap reveal" data-d="2"><div class="cap__icon">⊞</div><h4>12-framework crosswalk</h4><p>290+ real clauses over a canonical 14-domain spine; coverage for each framework derived automatically via the Coverage lens.</p></div>
+        <div class="cap reveal" data-d="3"><div class="cap__icon">◱</div><h4>Split cockpit</h4><p>A full-bleed three-pane workspace (navigator · adjudication · evidence) with "Ask CARE" in-context, no page reloads.</p></div>
+        <div class="cap reveal" data-d="1"><div class="cap__icon">⤒</div><h4>AI autofill + SIG/CAIQ</h4><p>Upload a scope sheet or MSA to pre-fill onboarding; import existing SIG/CAIQ answers; export a shareable trust profile.</p></div>
+        <div class="cap reveal" data-d="2"><div class="cap__icon">▤</div><h4>Examiner-defensible reports</h4><p>Per-vendor PDF + Excel with scope, per-control verdicts, evidence, overrides, consolidated rating and approval authority.</p></div>
+        <div class="cap reveal" data-d="3"><div class="cap__icon">$</div><h4>Cost-aware processing</h4><p>From $0 deterministic rules → local models → hybrid → full cloud AI. Escalate only the ambiguous cases.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">Inside the platform</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:40px;">Captured live</h2>
+      <div class="tgallery reveal" data-d="1">
+        <button class="shot shot--wide" data-src="assets/assurance/shot-welcome-2.webp" data-cap="CARE cockpit — adjudication in context"><img src="assets/assurance/shot-welcome-2.webp" alt="CARE cockpit" loading="lazy" /></button>
+        <button class="shot" data-src="assets/assurance/coverage.webp" data-cap="Coverage lens — automatic framework coverage"><img src="assets/assurance/coverage.webp" alt="Coverage" loading="lazy" /></button>
+        <button class="shot" data-src="assets/assurance/shot-welcome-3.webp" data-cap="Examiner-defensible evidence chain"><img src="assets/assurance/shot-welcome-3.webp" alt="Evidence chain" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <section class="section tcta">
+      <h2 class="title reveal" style="text-align:center;">See the whole suite</h2>
+      <div class="reveal" data-d="1" style="margin-bottom:36px;">
+        <a class="btn btn--primary" href="mailto:vyshakhg04@gmail.com" data-magnetic>Request a walkthrough</a>
+        <a class="btn btn--ghost" href="index.html#select" data-transition>Other lenses</a>
+      </div>
+      <div class="xnav reveal" data-d="2">
+        <a href="discovery.html" data-transition><div class="xnav__lab">← Pillar 02</div><div class="xnav__name">Discovery</div></a>
+        <a href="offensive.html" data-transition><div class="xnav__lab">Pillar 01 →</div><div class="xnav__name">Offensive</div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__mark">◈ ELUCIDA · ASSURANCE</span>
+    <span class="footer__tag">prove it to regulators</span>
+    <span>© 2026 Vyshakh Nair</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <figure><img id="lbImg" src="" alt="" /><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/gl.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/tool.js"></script>
+</body>
+</html>

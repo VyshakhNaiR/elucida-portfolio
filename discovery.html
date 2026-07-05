@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elucida · Discovery — see everything you run</title>
+  <meta name="description" content="Elucida Discovery — SBOM, AI-BOM and Shadow-AI across seven surfaces on one confidence-scored asset graph. Deploy cloud, on-prem or air-gapped." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/tool.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌖</text></svg>" />
+</head>
+<body data-theme="discovery">
+  <canvas id="glbg" class="gl-bg"></canvas>
+  <div class="spray"><i></i></div>
+  <canvas id="constellation" class="constellation" style="opacity:.2"></canvas>
+  <div class="grid-bg"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="veil"><div class="veil__logo">◈ ELUCIDA</div></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="brand" data-transition><span class="brand__mark">◈</span><span>ELUCIDA</span></a>
+    <nav class="nav__links">
+      <a href="index.html#select" data-transition>All tools</a>
+      <a href="offensive.html" data-transition>Offensive</a>
+      <a href="assurance.html" data-transition>Assurance</a>
+    </nav>
+    <a href="index.html" class="nav__cta" data-transition>← Back to suite</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="page">
+    <section class="thero">
+      <div class="thero__fx">
+        <div class="thero__viz" data-parallax="0.06"><div class="fx-radar"></div><img class="thero__logoxl" src="assets/logos/discovery.svg" alt="Elucida Discovery" /></div>
+      </div>
+      <div class="thero__inner">
+        <div class="thero__pillar reveal"><span>Pillar 02</span> Elucida · Discovery</div>
+        <h1 class="thero__name reveal" data-d="1">See everything you run.</h1>
+        <p class="thero__lead reveal" data-d="2">SBOM, AI-BOM and Shadow-AI on <b>one confidence-scored asset graph</b>. Every software component, every model, and every unsanctioned AI nobody told you about — dragged into the light across seven discovery surfaces.</p>
+        <div class="chips thero__chips reveal" data-d="3">
+          <span class="chip">TypeScript</span><span class="chip">NestJS</span><span class="chip">Next.js 15</span><span class="chip">Prisma + PostgreSQL</span><span class="chip">Go agent</span><span class="chip">Syft · Grype · Trivy</span>
+        </div>
+        <div class="thero__cta reveal" data-d="4">
+          <a href="#reel" class="btn btn--primary" data-magnetic>Watch it work <span class="btn__arrow">↓</span></a>
+          <a href="mailto:vyshakhg04@gmail.com?subject=Elucida%20%E2%80%94%20collaboration" class="btn btn--ghost btn--private"><svg class="btn__lock" viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="4.5" y="10" width="15" height="10.5" rx="2.5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15" r="1.5" fill="currentColor"/></svg>Source: Private — <b>seeking collaborators</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reel section" id="reel" style="padding-top:20px;">
+      <div class="reel__frame reveal">
+        <div class="reel__bar"><i></i><i></i><i></i><span class="reel__url">elucida-discovery · command center</span><span class="reel__badge">LIVE GRAPH</span></div>
+        <video data-lazy loop muted playsinline preload="metadata" poster="assets/discovery/overview-poster.webp">
+          <source src="assets/discovery/overview.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="reel__cap reveal">The Command Center — one posture score, cross-product KPIs, ranked top-risks and a streaming activity rail, auto-refreshing.</p>
+    </section>
+
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">The core promise</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:44px;">Confidence rises as surfaces<br /><span class="grad-text">corroborate the same asset.</span></h2>
+
+      <div class="fblock">
+        <div class="fblock__text reveal" data-reveal="left">
+          <span class="fblock__k">Shadow-AI</span>
+          <h3>Find the AI nobody sanctioned</h3>
+          <p>A host sensor, gateway, DNS logs and dependency scans all watch for AI. When several surfaces agree — "code imports @anthropic-ai/sdk" + "agent: outbound to api.anthropic.com" — the asset is confirmed, with the real evidence attached.</p>
+          <ul class="fblock__list">
+            <li><b>7 surfaces:</b> code · model · network · cloud · SaaS · host-agent · runtime gateway</li>
+            <li><b>Shadow → shadow account:</b> captures the credential identity behind each call (sanctioned / personal / unsanctioned)</li>
+            <li>Raw keys never stored — only a <b>SHA-256 fingerprint</b></li>
+          </ul>
+        </div>
+        <div class="fblock__media reveal" data-reveal="right" data-d="1">
+          <video data-lazy loop muted playsinline preload="none" poster="assets/discovery/shadow-ai-agent-poster.webp">
+            <source src="assets/discovery/shadow-ai-agent.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="fblock">
+        <div class="fblock__text reveal" data-reveal="right">
+          <span class="fblock__k">AI-BOM</span>
+          <h3>The complete, categorized inventory</h3>
+          <p>Every AI component by type — models, libraries &amp; SDKs, hosted providers, datasets — each with declared/sanctioned/shadow status, EU AI Act tier, risk, and the evidence behind it. ShadowAI is simply the unsanctioned subset.</p>
+          <ul class="fblock__list">
+            <li><b>Explainable findings:</b> what, where, why (CVSS · EPSS · KEV · CWE), and the exact upgrade command</li>
+            <li><b>Override &amp; VEX</b> decisions persist across every future scan</li>
+            <li><b>Deterministic-first:</b> purl/CVE matching and opcode scanning; ML only advisory</li>
+          </ul>
+        </div>
+        <div class="fblock__media reveal" data-reveal="left" data-d="1">
+          <img src="assets/discovery/poc-aibom.webp" alt="AI-BOM inventory" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">What's inside</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:40px;">The major kit</h2>
+      <div class="caps">
+        <div class="cap reveal" data-d="1"><div class="cap__icon">◱</div><h4>Command Center</h4><p>A single 0–100 posture score (A–F grade) from real risk signals — critical vulns, shadow egress, blind spots, open alerts.</p></div>
+        <div class="cap reveal" data-d="2"><div class="cap__icon">⌖</div><h4>Environment map</h4><p>Seven surfaces → the AI they reveal, with live traffic flow. Dark surfaces are visible blind spots you can close.</p></div>
+        <div class="cap reveal" data-d="3"><div class="cap__icon">⧉</div><h4>SBOM ensemble</h4><p>Syft generation + OSV/Grype/Trivy ensemble matching + licenses + supply-chain risk + VEX, in a hardened no-egress sandbox.</p></div>
+        <div class="cap reveal" data-d="1"><div class="cap__icon">⟿</div><h4>One fleet token</h4><p>Host agent rolls out via curl · Docker · K8s DaemonSet · Terraform · Ansible · SSM · Intune — and re-enrolls on IP change.</p></div>
+        <div class="cap reveal" data-d="2"><div class="cap__icon">◈</div><h4>Connector catalog</h4><p>Faceted by product × surface, live health, test-connection, GitHub fine-grained PAT with auto-rescan on push.</p></div>
+        <div class="cap reveal" data-d="3"><div class="cap__icon">▦</div><h4>Deploy anywhere</h4><p>Helm profiles for SaaS · on-prem · BYOC · air-gapped, with an offline OSV/EPSS/KEV feed bundle.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reveal"><span class="eyebrow">Inside the platform</span></div>
+      <h2 class="title reveal" data-d="1" style="margin-bottom:40px;">Captured live</h2>
+      <div class="tgallery reveal" data-d="1">
+        <button class="shot shot--wide" data-src="assets/discovery/poc-sbom.webp" data-cap="SBOM — components, licenses & supply-chain risk"><img src="assets/discovery/poc-sbom.webp" alt="SBOM" loading="lazy" /></button>
+        <button class="shot" data-src="assets/discovery/shot-overview-1.webp" data-cap="Command Center — live posture overview"><img src="assets/discovery/shot-overview-1.webp" alt="Command Center" loading="lazy" /></button>
+        <button class="shot" data-src="assets/discovery/shot-shadow-1.webp" data-cap="Shadow-AI — discovered across surfaces"><img src="assets/discovery/shot-shadow-1.webp" alt="Shadow AI" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <section class="section tcta">
+      <h2 class="title reveal" style="text-align:center;">See the whole suite</h2>
+      <div class="reveal" data-d="1" style="margin-bottom:36px;">
+        <a class="btn btn--primary" href="mailto:vyshakhg04@gmail.com" data-magnetic>Request a walkthrough</a>
+        <a class="btn btn--ghost" href="index.html#select" data-transition>Other lenses</a>
+      </div>
+      <div class="xnav reveal" data-d="2">
+        <a href="offensive.html" data-transition><div class="xnav__lab">← Pillar 01</div><div class="xnav__name">Offensive</div></a>
+        <a href="assurance.html" data-transition><div class="xnav__lab">Pillar 03 →</div><div class="xnav__name">Assurance</div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__mark">◈ ELUCIDA · DISCOVERY</span>
+    <span class="footer__tag">see everything you run</span>
+    <span>© 2026 Vyshakh Nair</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <figure><img id="lbImg" src="" alt="" /><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/gl.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/tool.js"></script>
+</body>
+</html>

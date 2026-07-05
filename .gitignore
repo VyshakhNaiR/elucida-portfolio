@@ -1,0 +1,56 @@
+# ==============================================================
+#  Elucida portfolio — public repo. Keep private things OUT.
+#  Tracked on purpose: site code + POC media (*.mp4 / *.webp).
+# ==============================================================
+
+# --- Private / never-deploy originals ---------------------------
+MyPhotos/
+_v1_backup/
+Vyshakh_Nair_CV.pdf
+*.pdf                     # resumes, reports, any doc export
+
+# raw POC recordings / source captures before compression
+# (drop originals in one of these and they stay local)
+_raw/
+_source/
+_originals/
+*.mov
+*.mkv
+
+# office docs can carry client data — never commit
+*.docx
+*.xlsx
+*.pptx
+*.csv
+
+# --- Secrets / credentials (defensive, even for a static site) --
+.env
+.env.*
+*.key
+*.pem
+*.p12
+id_rsa
+id_ed25519
+*.credentials
+secrets*.json
+
+# --- Scratch / temp / backups -----------------------------------
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+tmp/
+scratch/
+scratchpad/
+
+# --- OS / editor cruft ------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# --- Dependencies (none expected) -------------------------------
+node_modules/
